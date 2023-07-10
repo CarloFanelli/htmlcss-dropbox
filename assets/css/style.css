@@ -57,12 +57,12 @@
         justify-content: space-around;
     }
 
-    .plans{
+    .plans, .functions{
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .vert-card{
+    .vert-card, .card{
         width: calc(100%/12 * 4);
     }
 
@@ -82,6 +82,9 @@
 
 /* #endregion DEBUG css */
 
+.debug *{
+    border: 1px solid red;
+}
 
 .debug .spazio{
     width: 2rem;
