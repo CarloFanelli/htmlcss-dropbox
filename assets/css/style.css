@@ -320,7 +320,6 @@ label {
 
 /* #region partner */
 
-/* #endregion partner */
 .partner .col-4{
     padding:2rem 0 0 2rem ;
 }
@@ -328,6 +327,29 @@ label {
 .partner h4, .partner p, .partner div{
     margin-top: 1.5rem;
 }
+/* #endregion partner */
+
+
+/* #region team */
+.team-header>p{
+    margin: 2rem 0;
+}
+.team-header a{
+    text-decoration: underline;
+    color: var(--drop-evidence);
+}
+
+.team-content>.col-4{
+    flex-wrap: wrap;
+}
+.team-logo{
+    display: flex;
+    width: 50%;
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+/* #endregion team */
 
 /* #endregion main css */
 
