@@ -19,6 +19,17 @@ a {
     text-decoration: none;
 }
 
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
 .col-2 {
     width: calc(100%/12 *2);
 }
@@ -43,13 +54,27 @@ a {
     display: flex;
 }
 
-.w-80 {
-    width: 80%;
+.w-70 {
+    width: 70%;
     margin: 0 auto;
 }
 
 .p-1 {
     padding: 1rem;
+}
+
+.m-2 {
+    margin: 2rem auto;
+}
+
+.btn-blue {
+    background-color: var(--drop-evidence);
+    padding: 0.5rem;
+    max-width: 50%;
+}
+
+.btn-blue a {
+    color: var(--drop-light);
 }
 
 /* #endregion utility css */
@@ -61,21 +86,23 @@ header {
 
 .nav-left,
 .nav-right {
-    width: 25%;
+    width: 40%;
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
 }
-.navbar a{
+
+.navbar a {
     color: var(--drop-dark);
     text-transform: capitalize;
 }
 
-.inizia{
+.inizia {
     background-color: var(--drop-evidence);
     padding: 0.5rem;
 }
-.inizia a{
+
+.inizia a {
     color: var(--drop-light);
 }
 
@@ -90,6 +117,24 @@ header {
 /* #region main css */
 .jumbotron.content {
     justify-content: space-around;
+}
+
+.jumbotron {
+    background-color: var(--drop-bglight);
+    height: 777px;
+}
+.btn-blue.prova{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.fa-arrow-down{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.jumbo-content > div.col-8 > img{
+    max-width: 130%;
 }
 
 .plans,
