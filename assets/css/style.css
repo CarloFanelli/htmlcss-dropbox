@@ -4,112 +4,153 @@
     box-sizing: border-box;
 }
 
-:root{
-    --drop-light:rgba(255, 254, 254, 1);
+:root {
+    --drop-light: rgba(255, 254, 254, 1);
     --drop-dark: rgba(4, 6, 6, 1);
     --drop-evidence: rgba(1, 96, 255, 1);
-    --drop-bglight:rgba(181, 209, 231, 1);
+    --drop-bglight: rgba(181, 209, 231, 1);
 }
 
 /* #region common css */
-    .col-2{
-        width: calc(100%/12 *2);
-    }
-    .col-4{
-        width: calc(100%/12 * 4);
-    }
 
-    .col-6{
-        width: calc(100%/12 * 6);
-    }
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
 
-    .col-8{
-        width: calc(100%/12 * 8);
-    }
+.col-2 {
+    width: calc(100%/12 *2);
+}
+
+.col-4 {
+    width: calc(100%/12 * 4);
+}
+
+.col-6 {
+    width: calc(100%/12 * 6);
+}
+
+.col-8 {
+    width: calc(100%/12 * 8);
+}
 
 /* #endregion common css */
 
 /* #region utility css */
 
-    .d-flex{
-        display: flex;
-    }
+.d-flex {
+    display: flex;
+}
 
-    .w-80{
-        width: 80%;
-        margin:0 auto;
-    }
+.w-80 {
+    width: 80%;
+    margin: 0 auto;
+}
 
-    .p-1{
-        padding: 1rem;
-    }
+.p-1 {
+    padding: 1rem;
+}
+
 /* #endregion utility css */
 
 /* #region header css */
-    .navbar{
-        justify-content: space-between;
-        align-items: center;
-    }
+header {
+    background-color: var(--drop-light);
+}
+
+.nav-left,
+.nav-right {
+    width: 25%;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a{
+    color: var(--drop-dark);
+    text-transform: capitalize;
+}
+
+.inizia{
+    background-color: var(--drop-evidence);
+    padding: 0.5rem;
+}
+.inizia a{
+    color: var(--drop-light);
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* #endregion header css */
 
 
 /* #region main css */
-    .jumbotron.content{
-        justify-content: space-around;
-    }
+.jumbotron.content {
+    justify-content: space-around;
+}
 
-    .plans, .functions{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.plans,
+.functions {
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    .vert-card, .card{
-        width: calc(100%/12 * 4);
-    }
+.vert-card,
+.card {
+    width: calc(100%/12 * 4);
+}
 
-    .oriz-card{
-        width: 100%;
-    }
+.oriz-card {
+    width: 100%;
+}
 
 /* #endregion main css */
 
 
 /* #region footer css */
-.footer{
+.footer {
     background-color: var(--drop-dark);
 }
-.footer-top{
+
+.footer-top {
     justify-content: space-between;
 }
+
 /* #endregion footer css */
 
 
 /* #region DEBUG css */
 
-.debug *{
+.debug * {
     border: 1px solid red;
 }
 
-.debug .spazio{
+.debug .spazio {
     width: 2rem;
     height: 1rem;
     background-color: green;
 }
 
-.debug .navbar, .debug .business {
+.debug .navbar,
+.debug .business {
     background-color: aqua;
 }
 
-.debug .nav-left, .debug .nav-right{
+.debug .nav-left,
+.debug .nav-right {
     background-color: yellow;
 }
 
-.debug .jumbotron, .debug .plans{
+.debug .jumbotron,
+.debug .plans {
     background-color: blue;
 }
 
-.debug .jumbo-content, .debug .jumbo-header{
+.debug .jumbo-content,
+.debug .jumbo-header {
     background-color: #fff;
 }
 
