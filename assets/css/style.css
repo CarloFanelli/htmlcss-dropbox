@@ -12,7 +12,9 @@
 }
 
 /* #region common css */
-
+    .col-2{
+        width: calc(100%/12 *2);
+    }
     .col-4{
         width: calc(100%/12 * 4);
     }
@@ -74,13 +76,16 @@
 
 
 /* #region footer css */
+.footer{
+    background-color: var(--drop-dark);
+}
+.footer-top{
+    justify-content: space-between;
+}
 /* #endregion footer css */
 
 
 /* #region DEBUG css */
-
-
-/* #endregion DEBUG css */
 
 .debug *{
     border: 1px solid red;
@@ -108,3 +113,5 @@
     background-color: #fff;
 }
 
+
+/* #endregion DEBUG css */
