@@ -7,27 +7,41 @@
 :root {
     --drop-light: rgba(255, 254, 254, 1);
     --drop-dark: rgba(4, 6, 6, 1);
+    --drop-lightdark: rgb(208, 208, 208);
     --drop-evidence: rgba(1, 96, 255, 1);
     --drop-bglight: rgba(181, 209, 231, 1);
 }
 
 /* #region common css */
 
-a {
+ a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-decoration: none;
 }
 
-p,label{
+p,
+label,
+span {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
-h3{
+.card-content p,
+{
+font-size: 0.8rem;
+}
+
+h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 2.5rem; 
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
 }
 
 h2 {
@@ -81,9 +95,13 @@ h2 {
 
 .btn-blue a {
     color: var(--drop-light);
-    
+
 }
 
+.spacer{
+    width: 20%;
+    border: 0.5px solid var(--drop-lightdark);
+}
 /* #endregion utility css */
 
 /* #region header css */
@@ -131,37 +149,36 @@ header {
     background-color: var(--drop-bglight);
     height: 777px;
 }
-.btn-blue.prova{
+
+.btn-blue.prova {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.fa-arrow-down{
+.fa-arrow-down {
     font-size: 2.5rem;
     margin-top: 2rem;
 }
 
-.jumbo-content > div.col-8 > img{
+.jumbo-content>div.col-8>img {
     max-width: 130%;
 }
 
 /* #endregion jumbotron */
 
 /* #region business */
-    .business{
-        margin-top: 6rem;
-    }
+.business {
+    margin-top: 6rem;
+}
 
-    form{
-margin-top: 3rem;
-    }
-    label{
-        margin-right: 3rem;
+form {
+    margin-top: 3rem;
+}
 
-    }
+label {
+    margin-right: 3rem;
 
-
-
+}
 
 .plans,
 .functions {
@@ -172,11 +189,21 @@ margin-top: 3rem;
 .vert-card,
 .card {
     width: calc(100%/12 * 4);
+    border: 1px solid var(--drop-lightdark);
 }
-.vert-card > .card-header{
+
+.vert-card>.card-header {
     justify-content: center;
     padding: 0.5rem;
-    border: 1px solid var(--drop-dark) ;
+    border-bottom: 1px solid var(--drop-lightdark);
+    gap: 0.5rem;
+    justify-content: center;
+    line-height: 1rem;
+}
+
+.vert-card>.card-content {
+    justify-content: center;
+    padding: 1rem;
     gap: 0.5rem;
     justify-content: center;
     line-height: 1rem;
@@ -184,6 +211,57 @@ margin-top: 3rem;
 
 .oriz-card {
     width: 100%;
+}
+
+.card-content>.plan {
+    margin-top: 1rem;
+}
+
+.card-content>.price {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.card-content>.durata {
+    margin-top: 1rem;
+}
+.details{
+    margin: 2.5rem 0;
+}
+.details i{
+    margin-right: 0.5rem;
+}
+
+.details div{
+    margin-top: 1rem;
+}
+
+.try{
+    max-width: 100%;
+    margin: 2rem 0.5rem;
+    text-align: center;
+}
+
+.card-content>p>a{
+    text-decoration: underline ;
+    color: var(--drop-evidence);
+}
+.card-content>.spacer{
+    margin: 3rem 0 ;
+}
+
+.extra>p:first-child{
+    font-weight: 700;
+    margin-top: 2.5rem;
+}
+
+.extra i{
+    color: var(--drop-evidence);
+    margin-right: 0.5rem;
+}
+.extra > div{
+    margin-top: 1.5rem;
+
 }
 /* #endregion business */
 
