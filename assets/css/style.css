@@ -19,9 +19,15 @@ a {
     text-decoration: none;
 }
 
-p{
+p,label{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem; 
 }
 
 h2 {
@@ -75,6 +81,7 @@ h2 {
 
 .btn-blue a {
     color: var(--drop-light);
+    
 }
 
 /* #endregion utility css */
@@ -115,6 +122,7 @@ header {
 
 
 /* #region main css */
+/* #region jumbotron */
 .jumbotron.content {
     justify-content: space-around;
 }
@@ -137,6 +145,24 @@ header {
     max-width: 130%;
 }
 
+/* #endregion jumbotron */
+
+/* #region business */
+    .business{
+        margin-top: 6rem;
+    }
+
+    form{
+margin-top: 3rem;
+    }
+    label{
+        margin-right: 3rem;
+
+    }
+
+
+
+
 .plans,
 .functions {
     flex-wrap: wrap;
@@ -147,10 +173,19 @@ header {
 .card {
     width: calc(100%/12 * 4);
 }
+.vert-card > .card-header{
+    justify-content: center;
+    padding: 0.5rem;
+    border: 1px solid var(--drop-dark) ;
+    gap: 0.5rem;
+    justify-content: center;
+    line-height: 1rem;
+}
 
 .oriz-card {
     width: 100%;
 }
+/* #endregion business */
 
 /* #endregion main css */
 
