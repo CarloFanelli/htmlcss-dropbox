@@ -13,6 +13,12 @@
 }
 
 /* #region common css */
+section{
+    margin-bottom: 5rem;
+}
+img{
+    max-width: 100%;
+}
 
 a {
     font-family: 'Open Sans', sans-serif;
@@ -95,6 +101,17 @@ h2 {
 
 .btn-blue a {
     color: var(--drop-light);
+
+}
+
+.btn-light {
+    padding: 0.5rem;
+    max-width: 60%;
+    border: 1px solid var(--drop-dark);
+}
+
+.btn-light a {
+    color: var(--drop-dark);
 
 }
 
@@ -285,8 +302,20 @@ label {
 .col-4>.contact{
     max-width: 80%;
     text-align: center;
-    margin: 0 0 0 auto;}
+    margin: 0 0 0 auto;
+}
 /* #endregion business */
+
+/* #region partner */
+
+/* #endregion partner */
+.partner .col-4{
+    padding:2rem 0 0 2rem ;
+}
+
+.partner h4, .partner p, .partner div{
+    margin-top: 1.5rem;
+}
 
 /* #endregion main css */
 
