@@ -14,7 +14,7 @@
 
 /* #region common css */
 
- a {
+a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-decoration: none;
@@ -98,10 +98,11 @@ h2 {
 
 }
 
-.spacer{
+.spacer {
     width: 20%;
     border: 0.5px solid var(--drop-lightdark);
 }
+
 /* #endregion utility css */
 
 /* #region header css */
@@ -180,25 +181,37 @@ label {
 
 }
 
+.plans{
+    align-content: center;
+}
+
 .plans,
 .functions {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .vert-card,
 .card {
-    width: calc(100%/12 * 4);
+    width: calc(100%/12 * 3.5);
     border: 1px solid var(--drop-lightdark);
 }
 
-.vert-card>.card-header {
+
+
+.vert-card>.card-header,.oriz-card>.card-header {
     justify-content: center;
     padding: 0.5rem;
     border-bottom: 1px solid var(--drop-lightdark);
     gap: 0.5rem;
     justify-content: center;
     line-height: 1rem;
+}
+
+.oriz-card {
+    margin-top: 2rem;
+    width: 100%;
+    border: 1px solid var(--drop-lightdark);
 }
 
 .vert-card>.card-content {
@@ -209,9 +222,6 @@ label {
     line-height: 1rem;
 }
 
-.oriz-card {
-    width: 100%;
-}
 
 .card-content>.plan {
     margin-top: 1rem;
@@ -225,47 +235,57 @@ label {
 .card-content>.durata {
     margin-top: 1rem;
 }
-.details{
+
+.details {
     margin: 2.5rem 0;
 }
-.details i{
+
+.details i {
     margin-right: 0.5rem;
 }
 
-.details div{
+.details div {
     margin-top: 1rem;
 }
 
-.try{
+.try {
     max-width: 100%;
     margin: 2rem 0.5rem;
     text-align: center;
 }
 
-.card-content>p>a{
-    text-decoration: underline ;
+.card-content>p>a {
+    text-decoration: underline;
     color: var(--drop-evidence);
 }
-.card-content>.spacer{
-    margin: 3rem 0 ;
+
+.card-content>.spacer {
+    margin: 3rem 0;
 }
 
-.extra>p:first-child{
+.extra>p:first-child {
     font-weight: 700;
     margin-top: 2.5rem;
 }
-.extra>div:last-child{
+
+.extra>div:last-child {
     margin-bottom: 2.5rem;
 }
 
-.extra i{
+.extra i {
     color: var(--drop-evidence);
     margin-right: 0.5rem;
 }
-.extra > div{
+
+.extra>div {
     margin-top: 1.5rem;
 
 }
+
+.col-4>.contact{
+    max-width: 80%;
+    text-align: center;
+    margin: 0 0 0 auto;}
 /* #endregion business */
 
 /* #endregion main css */
