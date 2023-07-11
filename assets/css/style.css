@@ -14,7 +14,7 @@
 
 /* #region common css */
 section{
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
 }
 img{
     max-width: 100%;
@@ -53,7 +53,7 @@ h3 {
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .col-2 {
@@ -72,6 +72,10 @@ h2 {
     width: calc(100%/12 * 8);
 }
 
+img{
+    max-width: 100%;
+}
+
 /* #endregion common css */
 
 /* #region utility css */
@@ -80,8 +84,8 @@ h2 {
     display: flex;
 }
 
-.w-70 {
-    width: 70%;
+.w-75 {
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -96,7 +100,7 @@ h2 {
 .btn-blue {
     background-color: var(--drop-evidence);
     padding: 0.5rem;
-    max-width: 50%;
+    max-width: 70%;
     text-align: center;
 }
 
@@ -167,7 +171,7 @@ header {
 
 .jumbotron {
     background-color: var(--drop-bglight);
-    height: 777px;
+    height: 580px;
 }
 
 .btn-blue.prova {
@@ -177,26 +181,22 @@ header {
 
 .fa-arrow-down {
     font-size: 2.5rem;
-    margin-top: 2rem;
-}
-
-.jumbo-content>div.col-8>img {
-    max-width: 130%;
+    padding-top: 2rem;
 }
 
 /* #endregion jumbotron */
 
 /* #region business */
 .business {
-    margin-top: 6rem;
+    padding-top: 6rem;
 }
 
 form {
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 
 label {
-    margin-right: 3rem;
+    padding-right: 3rem;
 
 }
 
@@ -217,13 +217,14 @@ label {
 
 .card{
     width: calc(100%/12 * 3.5);
-    margin: 2rem 0;
+    padding: 2rem 1rem;
 }
+
 .operations h3{
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 .card>.card-content>p{
-    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 
@@ -253,28 +254,28 @@ label {
 
 
 .card-content>.plan {
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .card-content>.price {
     font-weight: 700;
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .card-content>.durata {
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .details {
-    margin: 2.5rem 0;
+    padding: 2.5rem 0;
 }
 
 .details i {
-    margin-right: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .details div {
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .try {
@@ -294,20 +295,20 @@ label {
 
 .extra>p:first-child {
     font-weight: 700;
-    margin-top: 2.5rem;
+    padding-top: 2.5rem;
 }
 
 .extra>div:last-child {
-    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .extra i {
     color: var(--drop-evidence);
-    margin-right: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .extra>div {
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
 
 }
 
@@ -332,7 +333,7 @@ label {
 
 /* #region team */
 .team-header>p{
-    margin: 2rem 0;
+    padding: 2rem 0;
 }
 .team-header a{
     text-decoration: underline;
