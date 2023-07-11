@@ -254,7 +254,22 @@ label {
 
 .card {
     width: calc(100%/12 * 3.5);
-    padding: 2rem 1rem;
+    padding: 2rem 0;
+}
+
+.card img{
+    filter: grayscale(1);
+}
+
+.card:hover{
+    transform: scale(1.2);
+    padding: 1rem 0;
+}
+.card:hover img{
+    filter: none;
+}
+.card:hover h4{
+    color: var(--drop-evidence);
 }
 
 .operations h3 {
@@ -558,6 +573,33 @@ footer {
     font-size: 0.7rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+}
+
+footer li:hover{
+    animation: bordergrow 10s linear infinite;
+}
+
+@keyframes bordergrow {
+    0%{
+        border-bottom: 1px solid var(--drop-evidence);
+        border-width: 0%;
+    }
+
+    30%{
+        border-bottom: 1px solid var(--drop-evidence);
+        border-width: 30%;
+    }
+
+    70%{
+        border-bottom: 1px solid var(--drop-evidence);
+        border-width: 70%;
+    }
+
+    100%{
+        border-bottom: 1px solid var(--drop-evidence);
+        border-width: 100%;
+    }
+    
 }
 
 /* #endregion footer css */
