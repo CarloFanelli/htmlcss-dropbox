@@ -145,6 +145,7 @@ img {
     border-color: var(--drop-light);
     color: var(--drop-light);
 }
+
 .btn-light>a:hover {
     color: var(--drop-light);
 }
@@ -162,6 +163,7 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
+    box-shadow: 0px 1px 20px 0px var(--drop-evidence);
 }
 
 .nav-left,
@@ -179,7 +181,7 @@ header {
 
 .nav-left>a:hover,
 .nav-right>a:hover {
-    border-bottom: 1px solid var(--drop-evidence);
+    border-bottom: 2px solid var(--drop-evidence);
 }
 
 .inizia {
@@ -189,11 +191,14 @@ header {
 
 .inizia a {
     color: var(--drop-light);
+    line-height: 1rem;
+
 }
 
 .navbar {
     justify-content: space-between;
     align-items: center;
+    padding: 0 0.5rem;
 }
 
 /* #endregion header css */
@@ -218,6 +223,7 @@ header {
 .fa-arrow-down {
     font-size: 2.5rem;
     padding-top: 2rem;
+    color: var(--drop-dark);
 }
 
 /* #endregion jumbotron */
@@ -257,18 +263,20 @@ label {
     padding: 2rem 0;
 }
 
-.card img{
+.card img {
     filter: grayscale(1);
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.2);
     padding: 1rem 0;
 }
-.card:hover img{
+
+.card:hover img {
     filter: none;
 }
-.card:hover h4{
+
+.card:hover h4 {
     color: var(--drop-evidence);
 }
 
@@ -407,13 +415,25 @@ label {
     display: flex;
     width: 50%;
     aspect-ratio: 1;
-    padding: 4rem;
     align-items: center;
     justify-content: center;
 }
 
-.team-logo>img {
+.logo-container {
+    display: flex;
+    aspect-ratio: 1;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container>img {
     filter: invert(1);
+    padding: 1rem;
+}
+
+.designit.logo-container {
+    border: 15px solid var(--drop-designit);
 }
 
 .designit {
@@ -478,6 +498,7 @@ label {
 .team-footer .col-4 {
     padding: 5rem 0;
 }
+
 .team-footer .btn-light {
     background-color: #fff;
     border: none;
@@ -496,6 +517,10 @@ label {
     padding-bottom: 2.5rem;
 }
 
+.question>p{
+    font-weight: 700;
+}
+
 .faq-content {
     padding: 1rem 0;
 }
@@ -505,7 +530,7 @@ label {
     padding: 1rem 0;
 }
 
-.faq .faq-content:last-child{
+.faq .faq-content:last-child {
     border-bottom: 1px solid var(--drop-dark);
 }
 
@@ -518,16 +543,17 @@ label {
     align-items: center;
 }
 
-.faq-content:hover .answere{
+.faq-content:hover .answere {
     display: block;
     padding: 2rem;
 }
-.faq-content:hover i{
+
+.faq-content:hover i {
     rotate: 180deg;
     padding-left: 1rem;
 }
 
-.answere{
+.answere {
     display: none;
 }
 
@@ -575,31 +601,31 @@ footer {
     font-weight: 400;
 }
 
-footer li:hover{
+footer li:hover {
     animation: bordergrow 10s linear infinite;
 }
 
 @keyframes bordergrow {
-    0%{
+    0% {
         border-bottom: 1px solid var(--drop-evidence);
         border-width: 0%;
     }
 
-    30%{
+    30% {
         border-bottom: 1px solid var(--drop-evidence);
         border-width: 30%;
     }
 
-    70%{
+    70% {
         border-bottom: 1px solid var(--drop-evidence);
         border-width: 70%;
     }
 
-    100%{
+    100% {
         border-bottom: 1px solid var(--drop-evidence);
         border-width: 100%;
     }
-    
+
 }
 
 /* #endregion footer css */
