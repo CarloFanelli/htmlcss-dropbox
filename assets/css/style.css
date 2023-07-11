@@ -280,6 +280,7 @@ label {
 .card {
     width: calc(100%/12 * 3.5);
     padding: 2rem 0;
+    transition: 1s;
 }
 
 .card img {
@@ -622,30 +623,9 @@ footer {
 }
 
 footer li:hover {
-    animation: bordergrow 10s linear infinite;
-}
-
-@keyframes bordergrow {
-    0% {
-        border-bottom: 1px solid var(--drop-evidence);
-        border-width: 0%;
-    }
-
-    30% {
-        border-bottom: 1px solid var(--drop-evidence);
-        border-width: 30%;
-    }
-
-    70% {
-        border-bottom: 1px solid var(--drop-evidence);
-        border-width: 70%;
-    }
-
-    100% {
-        border-bottom: 1px solid var(--drop-evidence);
-        border-width: 100%;
-    }
-
+    border-bottom: 1px solid var(--drop-evidence);
+    border-width: 50%;
+    transition: 1s;
 }
 
 /* #endregion footer css */
