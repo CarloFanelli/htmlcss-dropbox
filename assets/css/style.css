@@ -7,9 +7,17 @@
 :root {
     --drop-light: rgba(255, 254, 254, 1);
     --drop-dark: rgba(4, 6, 6, 1);
-    --drop-lightdark: rgb(208, 208, 208);
     --drop-evidence: rgba(1, 96, 255, 1);
     --drop-bglight: rgba(181, 209, 231, 1);
+    --drop-lightdark: rgb(208, 208, 208);
+    --drop-designit: #A3D39A;
+    --drop-asu: #60092B;
+    --drop-uf-florida: #0192CE;
+    --drop-topps: #FE1C1D;
+    --drop-grey: #F5F4F4;
+    --drop-wbr: #D4011F;
+    --drop-lonely: #0D2580;
+    --drop-cco: #FED831;
 }
 
 /* #region common css */
@@ -333,7 +341,7 @@ label {
 
 /* #region team */
 .team-header>p{
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 .team-header a{
     text-decoration: underline;
@@ -346,9 +354,48 @@ label {
 .team-logo{
     display: flex;
     width: 50%;
+    aspect-ratio: 1;
     padding: 4rem;
     align-items: center;
     justify-content: center;
+}
+.team-logo>img{
+    filter: invert(1);
+}
+
+.designit{
+    background-color: var(--drop-designit);
+}
+.asu{
+    background-color: var(--drop-asu);
+}
+.uf-florida{
+    background-color: var(--drop-uf-florida);
+}
+.topps{
+    background-color: var(--drop-topps);
+}
+.team-description{
+    background-color: var(--drop-grey);
+    padding:3rem ;
+}
+.team-description>img{
+    max-width: 50%;
+}
+.team-description>.testimonial,.team-description>.author{
+    padding-top: 2rem;
+}
+.wbr{
+    background-color: var(--drop-wbr);
+}
+.hearts{
+    background-color: var(--drop-bglight);
+}
+.lonely-planet{
+    background-color: var(--drop-lonely);
+}
+.cco{
+    background-color: var(--drop-cco);
 }
 /* #endregion team */
 
