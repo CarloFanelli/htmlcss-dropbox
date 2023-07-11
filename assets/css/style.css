@@ -46,6 +46,12 @@ span {
 font-size: 0.8rem;
 }
 
+h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -210,6 +216,7 @@ label {
 
 .plans{
     align-content: center;
+    padding-top: 2rem;
 }
 
 .plans,
@@ -451,12 +458,42 @@ label {
 
 
 /* #region footer css */
-.footer {
+footer {
     background-color: var(--drop-dark);
+    color: var(--drop-light);
+    padding: 4rem 0;
+}
+
+.footer-top h5{
+    padding: 1rem 0;
+}
+
+.footer-top li{
+    list-style-type: none;
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-top: 0.7rem;
 }
 
 .footer-top {
     justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 6rem;
+}
+
+.footer-bottom>.language{
+    border-top: 1px solid var(--drop-light);
+    width: 10%;
+    padding-top: 2rem;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.footer-bottom p, .footer-bottom{
+    font-size: 0.7rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 /* #endregion footer css */
