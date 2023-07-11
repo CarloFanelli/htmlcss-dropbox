@@ -120,7 +120,11 @@ img{
 
 .btn-blue a {
     color: var(--drop-light);
+}
 
+.btn-blue:hover{
+    filter:opacity(0.7);
+    color: var(--drop-light);
 }
 
 .btn-light {
@@ -145,12 +149,14 @@ img{
 /* #region header css */
 header {
     background-color: var(--drop-light);
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 .nav-left,
 .nav-right {
     width: 40%;
-    padding: 1rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -158,6 +164,11 @@ header {
 .navbar a {
     color: var(--drop-dark);
     text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.nav-left>a:hover,.nav-right>a:hover{
+    border-bottom: 1px solid var(--drop-evidence);
 }
 
 .inizia {
@@ -490,7 +501,7 @@ footer {
     align-items: center;
 }
 
-.footer-bottom p, .footer-bottom{
+.footer-bottom{
     font-size: 0.7rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
