@@ -242,6 +242,25 @@ label {
 
 }
 
+.my-radio {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border:1px solid var(--drop-evidence);
+    background-color: #fff;
+    border-radius: 50%;
+    
+}
+/* .my-radio:checked {
+    appearance: none;
+    width: 0.5rem;
+    height: 0.5rem;
+    border:0.5rem solid var(--drop-evidence);
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+} */
+
 .plans {
     align-content: center;
     padding-top: 2rem;
@@ -518,7 +537,7 @@ label {
     padding-bottom: 2.5rem;
 }
 
-.question>p{
+.question>p {
     font-weight: 700;
 }
 
