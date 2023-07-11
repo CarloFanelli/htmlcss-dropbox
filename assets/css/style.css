@@ -119,7 +119,7 @@ img{
 
 .btn-light {
     padding: 0.5rem;
-    max-width: 60%;
+    max-width: 70%;
     border: 1px solid var(--drop-dark);
     text-align: center;
 }
@@ -397,7 +397,55 @@ label {
 .cco{
     background-color: var(--drop-cco);
 }
+
+.team-footer{
+    background-color: var(--drop-bglight);
+}
+
+.team-footer .col-8{
+    padding: 5rem 1rem;
+}
+.team-footer h4{
+    color: var(--drop-asu);
+    font-size: 2rem;
+}
+
+.team-footer .col-4{
+    padding: 5rem 0;
+}
+
+.team-footer .btn-light{
+    background-color: #fff;
+    border: none;
+}
 /* #endregion team */
+
+/* #region FAQ */
+.faq h3{
+    padding-bottom: 2.5rem;
+}
+
+.faq-content{
+    padding: 1rem 0;
+}
+
+.faq-content>.question{
+    border-top: 1px solid var(--drop-dark);
+    padding: 1rem 0;
+}
+
+.faq-content>.question:last-child{
+    border-bottom: 1px solid var(--drop-dark);  
+}
+.faq-content>.question>i{
+    padding-right: 1rem;
+}
+.question{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #endregion FAQ */
 
 /* #endregion main css */
 
