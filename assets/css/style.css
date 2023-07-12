@@ -110,6 +110,11 @@ img {
     margin: 0 auto;
 }
 
+.w-80{
+    width: 80%;
+    margin: 0 auto;
+}
+
 .p-1 {
     padding: 1rem;
 }
